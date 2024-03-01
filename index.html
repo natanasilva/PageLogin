@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Tela de Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
+  </head>
+  <body>
+    <div class="content" id="content">
+      <form action="usuario_login.php" method="POST" class="formLogin">
+        <h1>Entre na Conta</h1>
+        <p>Digite os seus dados de acesso no campo abaixo.</p>
+        <label for="email">Seu E-mail</label>
+        <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+        <label for="password">Sua Senha</label>
+        <input type="password" placeholder="Digite sua senha" />
+        <a href="/">Esqueci minha senha</a>
+        <input type="submit" value="Acessar" class="btn" />
+      </form>
+    </div>
+    <script>
+      VANTA.BIRDS({
+        el: "#content",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+      });
+    </script>
+  </body>
+</html>
